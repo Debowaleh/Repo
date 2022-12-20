@@ -7,6 +7,55 @@
     <title>Document</title>
 </head>
 <body>
+
+<h1>Please type in your name here if your name is Ayo</h1>
+<input id="Ayo">
+
+<button onclick="check()">check</button>
+<h1 id="pass"></h1>
+<h1 id="fail"></h1>
+    
+
+
+
+
+
+
+    <script>
+// var biscuit = "okin"
+// if (biscuit == "yale") {
+// console.log("buy 10 naira yale")
+
+// }
+
+// else if (biscuit == "cabin"){
+//     console.log("buy 10 naira cabin")
+// }
+
+// else{
+//     console.log("come home")
+// }
+function check(){
+var Name = document.getElementById("Ayo").value;
+
+
+if (Name == "Ayo"){
+   document.getElementById("pass").innerHTML="success";
+
+   document.getElementById("fail").innerHTML= ""
+}
+
+else {
+    document.getElementById("fail").innerHTML="fail";
+
+    document.getElementById("pass").innerHTML= ""
+}
+}
+
+
+
+
+    </script>
     
 </body>
 </html>
